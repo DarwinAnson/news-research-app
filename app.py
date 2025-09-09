@@ -9,11 +9,11 @@ import time
 import io
 
 st.set_page_config(page_title="医药企业新闻调研工具", layout="wide")
-st.title("📊 医药企业新闻调研工具")
+st.title("📊 谷歌新闻调研工具")
 
 st.markdown("""
-本工具将从 **Google News** 抓取指定企业关键词在指定日期范围内的新闻，
-并生成 **Excel** 与 **HTML 报告** 供下载。适合非技术同事直接使用。
+本工具将从 **Google News** 抓取指定关键词在指定日期范围内的新闻，
+并生成 **Excel** 与 **HTML 报告** 供下载。
 """)
 
 # -------------------------------
