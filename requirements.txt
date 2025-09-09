@@ -1,0 +1,7 @@
+\
+streamlit
+gnews
+pandas
+python-dateutil
+openpyxl
+requests
