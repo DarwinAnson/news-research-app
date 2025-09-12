@@ -36,7 +36,7 @@ with st.sidebar:
         "勃林格殷格翰", "雅培", "美敦力", "百时美施贵宝", "欧加隆", "安捷伦", "赛默飞世尔"
     ]
 
-    st.caption("可在下方自定义关键词（每行一个；留空则使用默认清单）：")
+    st.caption("可在下方自定义关键词（每行一个；多关键词用空格表示；留空则使用默认清单）：")
     custom_kw_text = st.text_area(
         "自定义关键词（可选）",
         value="",
@@ -60,7 +60,7 @@ with st.sidebar:
     pause_min = st.slider("请求间隔（秒，随机）—最小", 0.5, 5.0, 1.0, 0.5)
     pause_max = st.slider("请求间隔（秒，随机）—最大", 1.0, 8.0, 2.0, 0.5)
 
-    only_title_contains_keyword = st.checkbox("只保留标题中包含关键词的新闻（推荐）", value=True)
+    only_title_contains_keyword = st.checkbox("只保留标题中包含关键词的新闻（推荐，若多关键词则取消勾选）", value=True)
 
 # -------------------------------
 # 校验参数
